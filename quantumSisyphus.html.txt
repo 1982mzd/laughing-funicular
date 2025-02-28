@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量子推石模拟器</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: rgba(255,255,255,0.9);
+            --accent-color: #e74c3c;
+            --primary-color: #3498db;
+            --transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            --paragraph-max-width: 680px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        #gravityBar {
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 10px rgba(231,76,60,0.3);
+            will-change: width;
+            z-index: 1000;
+        }
+
+        .container {
+            padding: 20vh 5vw;
+            min-height: 500vh;
+        }
+
+        .quantumParagraph {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            margin: 4rem auto;
+            max-width: var(--paragraph-max-width);
+            opacity: 0.9;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 2rem;
+            transform-origin: left center;
+            transition: var(--transition);
+            will-change: transform, opacity, margin;
+        }
+
+        .ad-section {
+            margin-top: 8rem;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .ad-section::before {
+            content: "广告";
+            position: absolute;
+            top: -0.8em;
+            left: 1rem;
+            font-size: 0.8em;
+            color: var(--accent-color);
+            background: var(--bg-color);
+            padding: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10vh 5vw;
+            }
+            
+            .quantumParagraph {
+                margin: 2rem auto;
+                padding-left: 1rem;
+                border-width: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="gravityBar" aria-hidden="true"></div>
+    
+    <main class="container">
+        <article>
+            <!-- 完整哲学段落开始 -->
+            <p class="quantumParagraph">唯一严肃的哲学问题是应不应该自杀 -西西弗斯的神话</p>
+            
+            <p class="quantumParagraph">我们永远无法真正凝视那个针尖，到底是幸福还是痛苦。当西西弗斯再一次推动巨石向上滚动，所对抗的是一种大他者。大他者注视着每一个人，而推动巨石，却似乎是服从，又似乎另一种反抗。对于推动巨石视作一种自我摧残，却仍要继续向上推动，即：我选择。而服从则是对于推动巨石视作一种异化，一种自我摧残的异化。即：被迫。自杀所具备的荒诞性是附着在每个活者身上的。</p>
+
+            <p class="quantumParagraph">主观建立客观的存在上，亿亿基本粒子构建了我们，每个粒子却又是可以预测的。百万年前的一只蝴蝶煽动的一下翅膀，决定了你下顿饭吃了什么。精神在此刻像是被确定了一般。所有因果互相交织缠绕，构建了确定的未来，就这样好似一切已盖棺定论。但我们对于一切客观事实的观察却又建立在感官上，客观建立在主观上。我们对一切的感知都建立上不准确的感官上，这一切又复杂了起来。客观变得朦胧不定，主观又岌岌可危。</p>
+
+            <p class="quantumParagraph">我们不得不相信西西弗斯是幸福的，而这建立在一种微妙的针尖上。尼采在几百年前宣布上帝已死，相比与解除禁制。更像是对于所有的伪神宣布：回来吧！回到人们心中。我们拥有了自由，却拥有了更多代价，我们所做的一切真的有意义吗？自我意识建立在无数被选择上，却可以做出看似有着自我意识的选择一般。人们不再为神劳动，而劳动的意义是什么？只剩下一个问题：我们是否应该自杀？</p>
+
+            <p class="quantumParagraph">佛教上在这点上不约而同，遁入空门是对一切不再感知，脱离尘世。自杀停止了一切的苦难与挫折，形成了新的解脱。所有人被道德的枷锁困在原地，带来是无尽的钝痛。当自我随着时间消磨，一点点的消逝了，只剩下一副躯壳。而这种荒诞性折磨着每个未死者，活着本身就是持续失去自我的过程。也许可以这样认为，大部分人经历着精神阉割，被活着异化。现在自杀则直接失去了自我。</p>
+
+            <p class="quantumParagraph">所有的一切都建立在一个针尖上，一切一切都被看似选择的被选择。就如一束光在明日被注视，却在今日坍缩。支撑这一切只是下一刻的欢愉与道德的束缚。当着失去了这二者，便是自裁。我们便不敢直视这针尖上的那一点，懦弱成了主题。我们便推动着巨石走了一次又一次，巨石坠下获得可怜的快感。在幸福与痛苦中摇摆，永无开脱。</p>
+
+            <p class="quantumParagraph">意识到荒诞，便会被荒诞永远的附着，99%的人在不知情的情况下推动着巨石，现在你已经意识到了这一切，超越了100%的人。祝你好运（：</p>
+            <!-- 完整哲学段落结束 -->
+
+            <!-- 完整广告内容 -->
+            <aside class="quantumParagraph ad-section" aria-label="广告内容">
+                v我50参与限量版彩虹巨石抽奖，中奖率高达1%<br>
+                （您支付的50元将会捐赠给平行时空贫困的你，助力每个努力推动巨石的人！）
+                
+                <hr>
+                
+                <p>———广告——<br>
+                dlc：mbti标签 原25 现价20 ！<br>
+                参与巨石推动 赢100元！<br>
+                砍一刀！减小巨石重量！</p>
+            </aside>
+        </article>
+    </main>
+
+    <script>
+        (function(){
+            'use strict';
+            
+            // ====== DOM安全初始化 ======
+            const init = () => {
+                const elements = {
+                    gravityBar: document.getElementById('gravityBar'),
+                    paragraphs: document.querySelectorAll('.quantumParagraph'),
+                    body: document.body
+                };
+
+                // 严格元素校验
+                if (!elements.gravityBar || elements.paragraphs.length !== 8) {
+                    console.error('关键元素验证失败', {
+                        gravityBar: !!elements.gravityBar,
+                        paragraphs: elements.paragraphs.length
+                    });
+                    return null;
+                }
+                return elements;
+            };
+
+            // ====== 主程序 ======
+            document.addEventListener('DOMContentLoaded', () => {
+                const elements = init();
+                if (!elements) return;
+
+                let entropy = 0;
+                let lastTime = performance.now();
+                let rafId = null;
+
+                const updateScene = () => {
+                    const chaos = Math.sin(entropy) * 20;
+                    const scrollHeight = Math.max(
+                        document.documentElement.scrollHeight,
+                        document.body.scrollHeight
+                    );
+
+                    // 更新所有段落
+                    elements.paragraphs.forEach(p => {
+                        p.style.transform = `skewY(${chaos*0.3}deg) translateX(${chaos}px)`;
+                        p.style.margin = `${30 + chaos*0.5}px auto`;
+                        p.style.opacity = 0.7 + Math.abs(Math.sin(entropy)) * 0.3;
+                    });
+
+                    // 处理坍缩事件
+                    if (scrollHeight > 0 && window.scrollY > scrollHeight * 0.98) {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        elements.paragraphs.forEach(p => {
+                            p.style.borderLeftColor = `hsl(${Math.random()*360}, 70%, 50%)`;
+                        });
+                    }
+
+                    rafId = requestAnimationFrame(updateScene);
+                };
+
+                // 事件处理
+                const handleInput = (deltaY) => {
+                    const now = performance.now();
+                    const deltaTime = Math.max(1, now - lastTime);
+                    entropy = Math.min(100, entropy + (Math.abs(deltaY)/deltaTime)*0.003);
+                    lastTime = now;
+                    
+                    if(rafId) cancelAnimationFrame(rafId);
+                    rafId = requestAnimationFrame(updateScene);
+                };
+
+                // 事件绑定
+                window.addEventListener('wheel', e => handleInput(e.deltaY), { passive: true });
+                window.addEventListener('touchmove', e => {
+                    if(e.touches[0]) handleInput(e.touches[0].movementY);
+                }, { passive: true });
+
+                // 启动
+                updateScene();
+            });
+        })();
+    </script>
+</body>
+</html>
